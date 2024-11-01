@@ -6,63 +6,73 @@
 	src: url("fonts/Inter-VariableFont_opsz,wght.ttf");
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1% 5%;
-    background: #c2fe0c;
+body {
+    margin: 0;
     font-family: "Inter";
-    font-weight: bold;
-    font-size: 100%;
 }
 
-.headerText {
+.header {
+    overflow: hidden;
+    background-color: #c2fe0c;
+    padding: 20px 10px;
+}
+  
+.header a {
     float: left;
-}
-
-.headerNav {
-    float: right;
-    color: #000;
-    padding-right: 10%;
-    padding-top: 1.75%;
-    font-size: 125%;
-}
-
-.headerNav a {
+    color: black;
+    text-align: center;
+    padding: 12px;
     text-decoration: none;
-    color: #000;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
 }
-
-.headerNav a:hover {
+  
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+  
+.header a:hover {
     text-decoration: underline;
-    color: #000;
+    background-color: #eafc88;
+    color: black;
 }
-
-a.header:link {
-    text-decoration: none;
-    color: #000;
+  
+.header a.active {
+    background-color: black;
+    color: white;
 }
-
-a.header:visited {
-    text-decoration: none;
-    color: #000;
-}
-
-a.header:hover {
-    text-decoration: none;
-    color: #000;
-}
-
-a.headerNav:hover {
-    text-decoration: none;
-    color: #000;
+  
+.header-right {
+    float: right;
 }
 
 #landingContainter {
     margin: 0 auto;
-    padding: 0;
-    margin-top: 6%;
-    background-image: url("images/temp.png");
+    padding: 3rem;
+    background-image: url(https://boxdropper.github.io/portfolio/images/temp.png);
+    background-size: cover;
+    text-align: center;
+}
+
+#featuredContainer {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(49, 49, 49);
+}
+
+.ftColumn {
+    width: 33.33%;
+    padding: 5px;
+}
+
+.ftRow {
+    display: flex;
+}
+
+.ftRow::after {
+    content: "";
+    clear: both;
+    display: table;
 }
