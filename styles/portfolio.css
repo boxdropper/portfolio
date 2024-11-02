@@ -113,3 +113,45 @@ body {
 .footer-right {
     float: right;
 }
+
+.softColumn {
+    width: auto;
+    display: flex;
+    margin: auto;
+}
+
+.softRow {
+    display: flex;
+}
+
+.softRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.downloadButton {
+    color: white;
+    height: 75px;
+    font-size: 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.btnItch {
+    background-color: #fa5c5c;
+}
+
+.btnGDrive {
+    background-color: cornsilk;
+}
+
+.btnSteam {
+    background-color: #231f20;
+}
+
+.downloadButton:hover {
+    box-shadow: 3px 3px 0px #000000;
+}
