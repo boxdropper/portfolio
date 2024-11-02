@@ -152,6 +152,10 @@ body {
     background-color: #231f20;
 }
 
+.btnModDB {
+    background-color: #AA0000;
+}
+
 .downloadButton:hover {
     box-shadow: 3px 3px 0px #000000;
 }
