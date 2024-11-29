@@ -67,6 +67,21 @@ body {
     margin-right: 15rem;
 }
 
+#featuredContainer a:link {
+    color: #c2fe0c;
+    filter: drop-shadow(3px 3px 0px #000000)
+}
+
+#featuredContainer a:hover {
+    color: #e2ff8a;
+    filter: drop-shadow(3px 3px 0px #000000)
+}
+
+#featuredContainer a:visited {
+    color: #85aa15;
+    filter: drop-shadow(3px 3px 0px #000000)
+}
+
 .ftColumn {
     width: 33.33%;
     padding: 5px;
