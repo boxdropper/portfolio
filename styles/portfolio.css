@@ -176,6 +176,10 @@ body {
     background-color: #AA0000;
 }
 
+.btnGitHub {
+    background-color: #1f2328;
+}
+
 .downloadButton:hover {
     box-shadow: 3px 3px 0px #000000;
 }
