@@ -13,13 +13,27 @@ body {
 
 .header {
     overflow: hidden;
-    background-color: #c2fe0c;
+    background: linear-gradient(300deg,#230010,#780039,#230010);
+    background-size: 180% 180%;
+    animation: gradient-animation 30s ease infinite;
     padding: 20px 10px;
 }
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   
 .header a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -35,8 +49,8 @@ body {
   
 .header a:hover {
     text-decoration: underline;
-    background-color: #eafc88;
-    color: black;
+    background-color: #8b516c;
+    color: white;
 }
   
 .header a.active {
@@ -99,7 +113,7 @@ body {
 
 .footer {
     overflow: hidden;
-    background-color: #eafc88;
+    background-color: #ff71b3;
     padding: 20px 10px;
 }
   
@@ -121,8 +135,8 @@ body {
   
 .footer a:hover {
     text-decoration: underline;
-    background-color: #eafc88;
-    color: black;
+    background-color: #8b516c;
+    color: white;
 }
   
 .footer a.active {
@@ -135,14 +149,16 @@ body {
 }
 
 .softColumn {
-    width: auto;
-    display: flex;
+    max-width: fit-content;
+    display: inline-block;
     margin: auto;
-    justify-content: center;
+    align-items: center;
 }
 
 .softRow {
     display: flex;
+    padding-left: 25rem;
+    padding-right: 25rem;
 }
 
 .softRow::after {

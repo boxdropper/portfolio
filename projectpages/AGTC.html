@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta property="og:type" content="website">
         <meta property="og:title" content="portfolio">
+        <script src="../js/modifiedDate.js" defer></script>
     </head>
     <body style="margin: 0;">
     <div class="header">
@@ -33,13 +34,13 @@
         <h1 style="color: white; font-size: 250%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">KEY SOFTWARE</h1>
         <div class="softRow">
             <div class="softColumn">
-                <img src="../images/softwareLogos/white/github.png" title="GitHub" alt="GitHub" style="max-width: 35%;">
+                <img src="../images/softwareLogos/white/github.png" title="GitHub" alt="GitHub">
             </div>
             <div class="softColumn">
-                <img src="../images/softwareLogos/white/miro.png" title="Miro" alt="Miro" style="max-width: 35%;">
+                <img src="../images/softwareLogos/white/miro.png" title="Miro" alt="Miro">
             </div>
             <div class="softColumn">
-                <img src="../images/softwareLogos/white/Unreal5.png" title="Unreal Engine 5" alt="Unreal Engine 5" style="max-width: 35%;">
+                <img src="../images/softwareLogos/white/Unreal5.png" title="Unreal Engine 5" alt="Unreal Engine 5">
             </div>
         </div>
         <div class="softRow">
@@ -55,12 +56,14 @@
         </div>
         <hr>
         <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">CONTRIBUTIONS</h1>
-        <ul style="color: white; font-size: 150%; padding-left: 28rem;">
-            <li>Creation of game-specific actors based on the code featured within the Unreal VR Template.</li>
-            <li>Protyping, testing and implementation of the randomised garbage types.</li>
-            <li>Providing feedback to other team members in regards to the scale of objects and levels in VR.</li>
-            <li>Sourcing sound effects to provide audible feedback to the Player.</li>
-        </ul>
+        <div style="text-align: center;">
+            <ul style="color: white; font-size: 150%; display: inline-block; text-align: left;">
+                <li style="padding-bottom: 10px;">Creation of game-specific actors based on the code featured within the Unreal VR Template.</li>
+                <li style="padding-bottom: 10px;">Protyping, testing and implementation of the randomised garbage types.</li>
+                <li style="padding-bottom: 10px;">Providing feedback to other team members in regards to the scale of objects and levels in VR.</li>
+                <li>Sourcing sound effects to provide audible feedback to the Player.</li>
+            </ul>
+        </div>
         <hr>
         <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">DEVELOPMENT SHOTS</h1>
         <div class="ftRow">
@@ -90,7 +93,7 @@
         <a href="https://github.com/boxdropper/T3M_Projects/releases/tag/AGTC" style="align-content: center; margin-left: 45.75%; margin-right: auto" target="_blank"><button class="downloadButton btnGitHub"><img src="../images/buttonLogos/GitHub_Logo_White.png" style="object-fit: contain; width: 75%;"></button></a>
     </div>
     <div class="footer">
-        <a class="logo" style="font-size: 15px;">Site created by Lewis Cardwell - Site Last Updated: March 7th, 2025</a>
+        <a class="logo" style="font-size: 15px;">Site created by Lewis Cardwell - Site Last Updated: <p id="modifyDate" style="display: inline;"></p></a>
         <div class="footer-right">
             <a href="mailto:sylenthmail@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="font-size: 150%;"></i></a>
             <a href="https://www.linkedin.com/in/lewis-cardwell-325300332/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 150%;"></i></a>
