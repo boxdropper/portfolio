@@ -27,3 +27,53 @@ body {
     background-color: #8b516c !important;
     color: white !important;
 }
+
+.btnItch {
+    background-color: #fa5c5c;
+    border-color: #fa5c5c;
+}
+
+.btnItch:hover {
+    background-color: #be4141;
+    border-color: #fa5c5c;
+}
+
+.btn-GDrive {
+    background-color: cornsilk;
+    border-color: cornsilk;
+}
+
+.btn-GDrive:hover {
+    background-color: rgb(228, 215, 164);
+    border-color: cornsilk;
+}
+
+.btnSteam {
+    background-color: #231f20;
+    border-color: #231f20;
+}
+
+.btnSteam:hover {
+    background-color: #1a1717;
+    border-color: #231f20;
+}
+
+.btnModDB {
+    background-color: #AA0000;
+    border-color: #AA0000;
+}
+
+.btnModDB:hover {
+    background-color: #7a0000;
+    border-color: #AA0000;
+}
+
+.btnGitHub {
+    background-color: #1f2328;
+    border-color: #1f2328;
+}
+
+.btnGitHub:hover {
+    background-color: #181b1f;
+    border-color: #1f2328;
+}
