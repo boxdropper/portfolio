@@ -48,32 +48,32 @@ body {
     border-color: cornsilk;
 }
 
-.btnSteam {
+.btn-Steam {
     background-color: #231f20;
     border-color: #231f20;
 }
 
-.btnSteam:hover {
+.btn-Steam:hover {
     background-color: #1a1717;
     border-color: #231f20;
 }
 
-.btnModDB {
+.btn-ModDB {
     background-color: #AA0000;
     border-color: #AA0000;
 }
 
-.btnModDB:hover {
+.btn-ModDB:hover {
     background-color: #7a0000;
     border-color: #AA0000;
 }
 
-.btnGitHub {
+.btn-GitHub {
     background-color: #1f2328;
     border-color: #1f2328;
 }
 
-.btnGitHub:hover {
+.btn-GitHub:hover {
     background-color: #181b1f;
     border-color: #1f2328;
 }
