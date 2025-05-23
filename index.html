@@ -1,75 +1,101 @@
-<html>
-    <head>
-        <title>Lewis Cardwell - Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link href="styles/portfolio.css" rel="stylesheet" type="text/css" media="all">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="portfolio">
-        <script src="js/modifiedDate.js" defer></script>
-    </head>
-    <body style="margin: 0;">
-    <div class="header">
-        <a class="logo" href="#">Lewis Cardwell - Game Designer</a>
-        <div class="header-right">
-            <a href="#" class="active">HOME</a>
-            <a href="about.html">ABOUT</a>
-        </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lewis Cardwell - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="styles/bs_portfolioadd.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Additional JS -->
+    <script src="js/modifiedDate.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="row me-md-auto" style="background: linear-gradient(300deg, rgb(35, 0, 16), rgb(120, 0, 57), rgb(35, 0, 16)) 0% 0% / 180% 180%; animation: gradient-animation 30s ease infinite;">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 ps-3 me-md-auto text-light text-decoration-none">
+                <img src="images/EyeOfTheBeholder.webp" alt="Logo" class="rounded-circle me-2" width="45" height="45">
+                <span class="fs-3"><strong>Lewis Cardwell - Game Designer</strong></span>
+            </a>
+            <ul class="nav nav-pills pe-3 py-1">
+                <li class="nav-item px-1"><a href="index.html" class="nav-link active" aria-current="page">HOME</a></li>
+                <li class="nav-item px-1"><a href="about.html" class="nav-link text-light">ABOUT</a></li>
+            </ul>
+        </header>
     </div>
-    <div id="landingContainter" style="background-image: url(images/CarPlacement1.png); background-position: center;">
-        <p style="font-weight: bold; font-size: 250%; line-height: 0.75rem; color: white; filter: drop-shadow(1px 1px 0px #000000);">Lewis Cardwell</p>
-        <p style="font-style: italic; font-size: 250%; line-height: 0.75rem; color: white; filter: drop-shadow(1px 1px 0px #000000);">Game/Technical Designer</p>
-        <p style="font-size: 150%; line-height: 2rem; color: white; filter: drop-shadow(1px 1px 0px #000000);">You have reached the Portfolio Page for Lewis Cardwell, a Second-Year Games Design student at Ulster University,<br>you can see a list of featured projects below!</p>
+    <!-- Header End -->
+    <div class="row text-center py-5 me-md-auto" style="background-image: url(images/CarPlacement1.png); background-position: center; background-size: cover;">
+        <h1 class="text-light display-5 fw-bold" style="filter:drop-shadow(3px 3px 0px #000000)">Lewis Cardwell</h1>
+        <h1 class="text-light fw-light" style="filter:drop-shadow(3px 3px 0px #000000)"><em>Game/Technical Designer</em></h1>
+        <h4 class="text-light fw-light" style="filter:drop-shadow(3px 3px 0px #000000)"><em>You have reached the Portfolio Page for Lewis Cardwell, a Games Design Student at Ulster University,</em></h4>
+        <br>
+        <h4 class="text-light fw-light" style="filter:drop-shadow(3px 3px 0px #000000)"><em>this page is currently under construction, please check back later for updates!</em></h4>
     </div>
-    <div id="featuredContainer">
-        <p style="color: white; font-size: 125%; text-align: center; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000);">Click on any of the images below to take you to a project's page.</p>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">FEATURED PROJECTS</h1>
-        <div class="ftRow">
-            <div class="ftColumn">
+    <div class="container-fluid px-0 ps-3 me-md-auto" style="background-color: rgb(49, 49, 49);">
+        <div class="row text-center align-items-center px-3 py-4 me-md-auto" style="background-color: rgb(49, 49, 49);">
+            <h5 class="text-light fw-bold py-1 pb-2" style="filter: drop-shadow(2px 2px 0px black);">Click on any of the images below to take you to a project's page.</h5>
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <h1 class="text-light fw-bold py-1 mb-1" style="filter: drop-shadow(2px 2px 0px black);">FEATURED PROJECTS</h1>
+            <div></div>
+            <div class="col-lg-4 py-4 px-1 me-md-auto">
                 <a href="projectpages/FFG.html"><img src="images/projThumb/FFG.webp" title="Fish Finder General" alt="Fish Finder General" style="width: 100%;"></a>
             </div>
-            <div class="ftColumn">
+            <div class="col-lg-4 py-4 px-1 me-md-auto">
                 <a href="projectpages/KYABETSU.html"><img src="images/projThumb/KYB.png" title="KYABETSU NT" alt="KYABETSU NT" style="width: 100%;"></a>
             </div>
-            <div class="ftColumn">
+            <div class="col-lg-4 py-4 px-1 me-ms-auto">
                 <a href="projectpages/JBEP3.html"><img src="images/projThumb/JBEP3.png" title="Jabroni Brawl: Episode 3" alt="Jabroni Brawl: Episode 3" style="width: 100%;"></a>
             </div>
-        </div>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">OTHER/SMALLER WORKS</h1>
-        <div class="ftRow">
-            <div class="ftColumn">
-                <a href="projectpages/triplepuzzle.html"><img src="images/projThumb/small/triplepuzzle.webp" title="triplepuzzle." alt="triplepuzzle." style="width: 100%;"></a>
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <h1 class="text-light fw-bold py-1 mb-4" style="filter: drop-shadow(2px 2px 0px black);">OTHER/SMALLER WORKS</h1>
+            <div></div>
+            <div class="d-flex justify-content-center">
+                <div class="col-xl-2 me-1 ms-1">
+                    <a href="projectpages/triplepuzzle.html"><img src="images/projThumb/small/triplepuzzle.webp" title="triplepuzzle." alt="triplepuzzle." style="width: 100%;"></a>
+                </div>
+                <div class="col-xl-2 me-1 ms-1">
+                    <a href="projectpages/OC.html"><img src="images/projThumb/small/obsidian.webp" title="Obsidian Conflict" alt="Obsidian Conflict" style="width: 100%;"></a>
+                </div>
+                <div class="col-xl-2 me-1 ms-1">
+                    <a href="projectpages/AGTC.html"><img src="images/projThumb/small/AGTC.webp" title="Annual Garbage Throwing Competition" alt="Annual Garbage Throwing Competition" style="width: 100%;"></a>
+                </div>
+                <div class="col-xl-2 me-1 ms-1">
+                    <a href="projectpages/xenus2hud.html"><img src="images/projThumb/small/xenus2.webp" title="Xenus 2 - HUD Redesign" alt="Xenus 2 - HUD Redesign" style="width: 100%;"></a>
+                </div>
+                <div class="col-xl-2 me-1 ms-1">
+                    <a href="projectpages/AVPP.html"><img src="images/projThumb/small/AVPP.webp" title="A Very Postal Protest" alt="A Very Postal Protest" style="width: 100%;"></a>
+                </div>
+                <div class="col-xl-2 me-1 ms-1">
+                    <a href="#"><img src="images/projThumb/small/DMCR.webp" title="Deathmatch Classic: Refragged" alt="Deathmatch Classic: Refragged" style="width: 100%;"></a>
+                </div>
             </div>
-            <div class="ftColumn">
-                <a href="projectpages/OC.html"><img src="images/projThumb/small/obsidian.webp" title="Obsidian Conflict" alt="Obsidian Conflict" style="width: 100%;"></a>
-            </div>
-            <div class="ftColumn">
-                <a href="projectpages/AGTC.html"><img src="images/projThumb/small/AGTC.webp" title="Annual Garbage Throwing Competition" alt="Annual Garbage Throwing Competition" style="width: 100%;"></a>
-            </div>
-            <div class="ftColumn">
-                <a href="projectpages/xenus2hud.html"><img src="images/projThumb/small/xenus2.webp" title="Xenus 2 - HUD Redesign" alt="Xenus 2 - HUD Redesign" style="width: 100%;"></a>
-            </div>
-        </div>
-        <div class="ftRow" style="width: 73.6%;">
-            <div class="ftColumn">
-                <a href="projectpages/AVPP.html"><img src="images/projThumb/small/AVPP.webp" title="A Very Postal Protest" alt="A Very Postal Protest" style="width: 100%;"></a>
-            </div>
-            <div class="ftColumn">
-                <a href="#"><img src="images/projThumb/small/DMCR.webp" title="Deathmatch Classic: Refragged" alt="Deathmatch Classic: Refragged" style="width: 100%;"></a>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <a class="logo" style="font-size: 15px;">Site created by Lewis Cardwell - Site Last Updated: <p id="modifyDate" style="display: inline;"></p></a>
-        <div class="footer-right">
-            <a href="mailto:sylenthmail@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="font-size: 150%;"></i></a>
-            <a href="https://www.linkedin.com/in/lewis-cardwell-325300332/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 150%;"></i></a>
-            <a href="https://sylenth.itch.io/" target="_blank"><i class="fa-brands fa-itch-io" style="font-size: 150%;"></i></a>
         </div>
     </div>
-    </body>
+    <!-- Footer Start -->
+    <div class="row me-md-auto" style="background: #ff71b3;">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-4">
+           <div class="col-md-5 d-flex align-items-center">
+                <a href="#top" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1 ps-3">
+                    <span class="mb-3 mb-md-0 text-dark"><strong>This page was last edited: <span id="modifyDate"></span> - Powered by Bootstrap since May 2025!</strong></span>
+                </a>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-3">
+                <li class="ms-3"><a href="mailto:sylenthmail@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="font-size: 175%; color: black;"></i></a></li>
+                <li class="ms-3"><a href="https://www.linkedin.com/in/lewis-cardwell-325300332/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 175%; color: black;"></i></a></li>
+                <li class="ms-3"><a href="https://sylenth.itch.io/" target="_blank"><i class="fa-brands fa-itch-io" style="font-size: 175%; color: black;"></i></a></li>
+        </footer>
+    </div>
+    <!-- Footer End -->
+    <!-- Bootstrap Core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
 </html>
