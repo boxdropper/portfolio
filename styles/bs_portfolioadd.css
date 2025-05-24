@@ -28,12 +28,12 @@ body {
     color: white !important;
 }
 
-.btnItch {
+.btn-Itch {
     background-color: #fa5c5c;
     border-color: #fa5c5c;
 }
 
-.btnItch:hover {
+.btn-Itch:hover {
     background-color: #be4141;
     border-color: #fa5c5c;
 }
