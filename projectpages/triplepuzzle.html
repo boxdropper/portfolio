@@ -1,96 +1,174 @@
-<html>
-    <head>
-        <title>Lewis Cardwell - triplepuzzle.</title>
-        <link rel="icon" type="image/x-icon" href="../favicon.ico">
-        <link href="../styles/portfolio.css" rel="stylesheet" type="text/css" media="all">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="portfolio">
-        <script src="../js/modifiedDate.js" defer></script>
-    </head>
-    <body style="margin: 0;">
-    <div class="header">
-        <a class="logo" href="../index.html">Lewis Cardwell - Game Designer</a>
-        <div class="header-right">
-            <a href="../index.html">HOME</a>
-            <a href="../about.html">ABOUT</a>
-        </div>
-    </div>
-    <div id="landingContainter" style="padding: 2rem; padding-top: 7rem; padding-bottom: 7rem; background-image: url(https://boxdropper.github.io/portfolio/images/projBGs/triplepuzzle.png);">
-        <img src="../images/projLogos/triplepuzzle.png" style="width: 64%;">
-    </div>
-    <div id="featuredContainer">
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">GAMEPLAY</h1>
-        <iframe style="display: block; margin-left: auto; margin-right: auto;" width="1280" height="720" src="https://www.youtube.com/embed/K970NM7CP_s" title="triplepuzzle. gameplay video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p style="color: white; font-size: 125%; text-align: center; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000);">"triplepuzzle." was a single Level Design entry for the ongoing Source Engine anthology project "Map Labs" and its "Three Rooms" challenge, planned, started and finished in about 4 days.</p>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">ROLES & RESPONSIBILITIES</h1>
-        <p style="color: white; font-size: 125%; text-align: center; font-weight: bold;">Since "triplepuzzle." was a solo project, I had the roles and responsibilities of both planning and implementing the Level Design</p>
-        <h1 style="color: white; font-size: 250%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">KEY SOFTWARE</h1>
-        <div class="softRow">
-            <div class="softColumn">
-                <img src="../images/softwareLogos/white/sourceSDK.png" title="Source Engine Software Development Kit" alt="Source Engine Software Development Kit">
-            </div>
-            <div class="softColumn">
-                <img src="../images/softwareLogos/white/photoshop.png" title="Adobe Photoshop" alt="Adobe Photoshop">
-            </div>
-        </div>
-        <div class="softRow">
-            <div class="softColumn">
-                <p style="text-align: center; color: white; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000); margin-left: 0; margin-right: 0;">Source SDK</p>
-            </div>
-            <div class="softColumn">
-                <p style="text-align: center; color: white; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000); margin-left: 0; margin-right: 0;">Adobe Photoshop</p>
-            </div>
-        </div>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">CONTRIBUTIONS</h1>
-        <div style="text-align: center;">
-            <ul style="color: white; font-size: 150%; display: inline-block; text-align: left;">
-                <li style="padding-bottom: 10px;">Rapid protyping of each of the three rooms, working on each separately.</li>
-                <li style="padding-bottom: 10px;">Created custom textures using Photoshop.</li>
-                <li style="padding-bottom: 10px;">Made usage of the Source Engine's Input/Output system to script and implement multiple endings.</li>
-                <li>Ported assets from other Source Engine title, Counter-Strike: Source.</li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lewis Cardwell - triplepuzzle</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="../styles/bs_portfolioadd.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Additional JS -->
+    <script src="../js/modifiedDate.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="row me-md-auto" style="background: linear-gradient(300deg, rgb(35, 0, 16), rgb(120, 0, 57), rgb(35, 0, 16)) 0% 0% / 180% 180%; animation: gradient-animation 30s ease infinite;">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 ps-3 me-md-auto text-light text-decoration-none">
+                <img src="../images/EyeOfTheBeholder.webp" alt="Logo" class="rounded-circle me-2" width="45" height="45">
+                <span class="fs-3"><strong>Lewis Cardwell - Game Designer</strong></span>
+            </a>
+            <ul class="nav nav-pills pe-3 py-1">
+                <li class="nav-item px-1"><a href="../index.html" class="nav-link text-light" aria-current="page">HOME</a></li>
+                <li class="nav-item px-1"><a href="../about.html" class="nav-link text-light">ABOUT</a></li>
             </ul>
-        </div>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">DEVELOPMENT SHOTS</h1>
-        <div class="ftRow">
-            <div class="ftColumn">
-                <img src="../images/dev/triplepuzzle/HPP1.png" title="Hammer I/O for the Wakeup Sequence" alt="Hammer I/O for the Wakeup Sequence" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/triplepuzzle/HPP2.png" title="Full Hammer Window View of the First Room's door" alt="Full Hammer Window View of the First Room's door" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/triplepuzzle/HPP3.png" title="Hammer I/O for one of the five endings" alt="Hammer I/O for one of the five endings" style="width: 100%;">
-            </div>
-        </div>
-        <div class="ftRow">
-            <div class="ftColumn">
-                <img src="../images/dev/triplepuzzle/HPP4.png" title="Full Hammer Window of the Labber Sequence" alt="Full Hammer Window of the Labber Sequence" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/triplepuzzle/IG1.jpg" title="In-Game Testing of Color Correction entities" alt="In-Game Testing of Color Correction entities" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/triplepuzzle/IG2.jpg" title="In-Game Lighting Bug" alt="In-Game Lighting Bug" style="width: 100%;">
-            </div>
-        </div>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">DOWNLOAD</h1>
-        <a href="https://www.moddb.com/mods/map-labs/downloads/three-rooms" style="align-content: center; margin-left: 45.75%; margin-right: auto" target="_blank"><button class="downloadButton btnModDB"><img src="../images/buttonLogos/mDB.png" style="object-fit: contain; width: 75%;"></button></a>
-        <p style="text-align: center; color: orange; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000);">*Ownership of Source SDK 2013 Singleplayer is required (Upcoming Branch).</p>
+        </header>
     </div>
-    <div class="footer">
-        <a class="logo" style="font-size: 15px;">Site created by Lewis Cardwell - Site Last Updated: <p id="modifyDate" style="display: inline;"></p></a>
-        <div class="footer-right">
-            <a href="mailto:sylenthmail@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="font-size: 150%;"></i></a>
-            <a href="https://www.linkedin.com/in/lewis-cardwell-325300332/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 150%;"></i></a>
-            <a href="https://sylenth.itch.io/" target="_blank"><i class="fa-brands fa-itch-io" style="font-size: 150%;"></i></a>
+    <!-- Header End -->
+    <div class="row text-center py-5 me-md-auto" style="background-image: url(../images/projBGs/triplepuzzle.png); background-position: top; background-size: cover;">
+        <img src="../images/projLogos/triplepuzzle.png" class="rounded mx-lg-auto d-block img-responsive py-5" style="max-width: 38%; height: auto;" loading="important">
+    </div>
+    <div class="container-fluid px-0 ps-3 me-md-auto" style="background-color: rgb(49, 49, 49);">
+        <div class="row text-center align-items-center px-3 py-4 me-md-auto" style="background-color: rgb(49, 49, 49);">
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">GAMEPLAY VIDEO</h1>
+            <iframe class="mx-lg-auto d-block pb-5" style="max-width: 1280px;" width="1280" height="720" src="https://www.youtube.com/embed/K970NM7CP_s" title="triplepuzzle. gameplay video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ruffle-polyfilled=""></iframe>
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <div class="row flex-lg-row-reverse align-items-center g-1 py-1 pb-4">
+                <div class="col-10 col-sm-8 col-lg-5"> 
+                    <img src="../images/backgroundImages/TPZL.webp" class="d-block mx-lg-auto img-fluid" alt="garbage!" title="garbage!" width="500" height="500" loading="lazy" style="filter:drop-shadow(6px 6px 5px #00000080)"> 
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-light display-3 fw-bold lh-1 mb-3" style="filter:drop-shadow(3px 3px 0px #000000)">BACKGROUND</h1>
+                    <p class="text-light fs-5">"triplepuzzle." was a single Level Design entry for the ongoing Source Engine anthology project <a href="https://www.moddb.com/mods/map-labs" target="_blank">"Map Labs"</a> and its "Three Rooms" challenge, planned, started and finished in about 4 days.</p>
+                    <p class="text-light fs-5">It is the second time that I have made a submission to Map Labs, the first being for their <a href="https://www.moddb.com/mods/map-labs/downloads/test-tube-17-deceptionville" target="_blank">"DeceptionVile" Test Tube</a> with <a href="https://www.runthinkshootlive.com/" target="_blank">RunThinkShootLive</a> titled "videogame".</p>
+                    <p class="text-light fs-5">"triplepuzzle" was created for my love of the Source Engine and desire to do more with it other than small, private experiments.</p>
+                </div>
+            </div>
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">ROLES & RESPONSIBILITIES</h1>
+            <p class="text-light fs-5">Since "triplepuzzle." was a solo project, I had the roles and responsibilities of both Planning and Implementing the Level Design</p>
+            <!-- Key Software Start -->
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">KEY SOFTWARE</h1>
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-1 py-4 px-1 mx-5">
+                    <img src="../images/softwareLogos/white/sourceSDK.png" title="Source SDK" alt="Source SDK" style="width: 100%;">
+                    <p class="text-light fs-5 pt-1 fw-bold" style="filter:drop-shadow(2px 2px 0px #000000)">Source SDK</p>
+                </div>
+                <div class="col-sm-1 py-4 px-1 mx-5">
+                    <img src="../images/softwareLogos/white/photoshop.png" title="Adobe Photoshop" alt="Adobe Photoshop" style="width: 100%;">
+                    <p class="text-light fs-5 pt-1 fw-bold" style="filter:drop-shadow(2px 2px 0px #000000)">Adobe Photoshop</p>
+                </div>
+            </div>
+            <!-- Key Software End -->
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <!-- Contributions Start -->
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">CONTRIBUTIONS</h1>
+            <p class="text-light fs-4 pt-1">• Rapid protyping of each of the three rooms, working on each separately/one at a time.</p></li>
+            <p class="text-light fs-4 pt-1">• Created custom textures using Photoshop and converted them to Source's proprietary Texture & Material Formats (VTF/VMT).</p></li>
+            <p class="text-light fs-4 pt-1">• Made usage of the Source Engine's Input/Output system to script and implement multiple endings and the actual functionality of the Puzzles.</p></li>
+            <p class="text-light fs-4 pt-1 py-4">• Ported assets from other Source Engine title, Counter-Strike: Source.</p></li>
+            <!-- Contributions End -->
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <!-- Development Shots Start -->
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">DEVELOPMENT SHOTS</h1>
+            <div class="row justify-content-center pb-5">
+                <div id="devShotCarousel" class="carousel slide" data-bs-theme="light" style="max-width: 50%;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/dev/triplepuzzle/HPP1.png" class="d-block w-100" alt="triplepuzzle - that sdk feeling">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Wake-Up Sequence I/O</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">I/O & Entity Setup for the beginning wake-up animation</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/triplepuzzle/HPP2.png" class="d-block w-100" alt="triplepuzzle - that sdk feeling">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">First Puzzle's Entity Spaghetti</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A combination of Sound, UI & Math-Based Entities and their associated Inputs & Outputs that drive the first room's puzzle</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/triplepuzzle/HPP3.png" class="d-block w-100" alt="triplepuzzle - that sdk feeling">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Ending Screen I/O</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A brush with a Texture with multiple frames within that get shown by a separate entity that increments the texture's current frame</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/triplepuzzle/HPP4.png" class="d-block w-100" alt="triplepuzzle - that sdk feeling">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">The Second Puzzle & its I/O</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A bit more complicated, making use of "Filter" entities made to detect certain entities and their names in order to trigger certain functions</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/triplepuzzle/IG1.jpg" class="d-block w-100" alt="triplepuzzle - that sdk feeling">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Colour Correction</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A Menu within the Source Engine that allows for the creation of ".raw" files that get fed into a colour correction entity within the level</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/triplepuzzle/IG2.jpg" class="d-block w-100" alt="triplepuzzle - that sdk feeling">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Lighting Bug</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A Point Light getting cut-off in the transition between surfaces, VRAD is arcane</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#devShotCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#devShotCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Development Shots End -->
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">DOWNLOAD</h1>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <a class="btn btn-primary btn-ModDB" role="button" href="https://www.moddb.com/mods/map-labs/downloads/three-rooms"><img src="../images/buttonLogos/mDB.png" width="148" class="py-2"></a>
+            </div>
+            <p class="fs-4 pt-1 fw-bold" style="color: orangered; filter:drop-shadow(1px 1px 0px #000000)">*Ownership of Source SDK 2013 Singleplayer** & Mapbase is required to play.</p>
+            <p class="fs-5 pt-1 fw-bold" style="color: orangered; filter:drop-shadow(1px 1px 0px #000000)">**Source SDK 2013 Singleplayer must be set to the "Upcoming" Branch/Beta within Steam.</p>
         </div>
     </div>
-    </body>
+    <!-- Footer Start -->
+    <div class="row me-md-auto" style="background: #ff71b3;">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-4">
+           <div class="col-md-5 d-flex align-items-center">
+                <a href="#top" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1 ps-3">
+                    <span class="mb-3 mb-md-0 text-dark"><strong>This page was last edited: <span id="modifyDate"></span> - Powered by Bootstrap since May 2025!</strong></span>
+                </a>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-3">
+                <li class="ms-3"><a href="mailto:sylenthmail@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="font-size: 175%; color: black;"></i></a></li>
+                <li class="ms-3"><a href="https://www.linkedin.com/in/lewis-cardwell-325300332/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 175%; color: black;"></i></a></li>
+                <li class="ms-3"><a href="https://sylenth.itch.io/" target="_blank"><i class="fa-brands fa-itch-io" style="font-size: 175%; color: black;"></i></a></li>
+        </footer>
+    </div>
+    <!-- Footer End -->
+    <!-- Bootstrap Core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
 </html>
