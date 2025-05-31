@@ -1,2 +1,2 @@
-let modifyDate = "March 18th, 2025"
+let modifyDate = document.lastModified
 document.getElementById("modifyDate").innerHTML = modifyDate;

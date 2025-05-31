@@ -1,114 +1,177 @@
-<html>
-    <head>
-        <title>Lewis Cardwell - Jabroni Brawl: Episode 3</title>
-        <link rel="icon" type="image/x-icon" href="../favicon.ico">
-        <link href="../styles/portfolio.css" rel="stylesheet" type="text/css" media="all">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="portfolio">
-        <script src="../js/modifiedDate.js" defer></script>
-    </head>
-    <body style="margin: 0;">
-    <div class="header">
-        <a class="logo" href="../index.html">Lewis Cardwell - Game Designer</a>
-        <div class="header-right">
-            <a href="../index.html">HOME</a>
-            <a href="../about.html">ABOUT</a>
-        </div>
-    </div>
-    <div id="landingContainter" style="padding: 2rem; padding-top: 2rem; padding-bottom: 2rem; background-image: url(https://boxdropper.github.io/portfolio/images/projBGs/JBEP3.png);">
-        <img src="../images/projLogos/JBEP3.png">
-    </div>
-    <div id="featuredContainer">
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">TRAILER</h1>
-        <iframe style="display: block; margin-left: auto; margin-right: auto;" width="1280" height="720" src="https://www.youtube.com/embed/jn_KnbmisQo" title="Jabroni Brawl: Episode 3 RELEASE Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p style="color: white; font-size: 125%; text-align: center; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000);">"Jabroni Brawl: Episode 3" is a multiplayer shooter based on a licenced branch of the Source Engine featuring a wide assortment of maps, gamemodes, playermodels and weapons.</p>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">ROLES & RESPONSIBILITIES</h1>
-        <p style="color: white; font-size: 125%; text-align: center; font-weight: bold;">I have been and still am a member of the Quality Assurance team for Jabroni Brawl since July 2020, helping to test various new and existing features all the way to release and onward.</p>
-        <h1 style="color: white; font-size: 250%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">KEY SOFTWARE</h1>
-        <div class="softRow">
-            <div class="softColumn">
-                <img src="../images/softwareLogos/white/sourceSDK.png" title="Source Engine Software Development Kit" alt="Source Engine Software Development Kit">
-            </div>
-            <div class="softColumn">
-                <img src="../images/softwareLogos/white/Lightshot.png" title="Lightshot" alt="Lightshot">
-            </div>
-            <div class="softColumn">
-                <img src="../images/softwareLogos/white/OBS.png" title="Open Broadcast Software (OBS)" alt="Open Broadcast Software (OBS)">
-            </div>
-        </div>
-        <div class="softRow">
-            <div class="softColumn">
-                <p style="text-align: center; color: white; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000); margin-left: 0; margin-right: 0;">Source SDK</p>
-            </div>
-            <div class="softColumn">
-                <p style="text-align: center; color: white; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000); margin-left: 0; margin-right: 0;">Lightshot</p>
-            </div>
-            <div class="softColumn">
-                <p style="text-align: center; color: white; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000); margin-left: 0; margin-right: 0;">OBS / Open Broadcast Software</p>
-            </div>
-        </div>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">CONTRIBUTIONS</h1>
-        <div style="text-align: center;">
-            <ul style="color: white; font-size: 150%; display: inline-block; text-align: left;">
-                <li style="padding-bottom: 10px;">Reported issues with missing sound effects using comparison videos recorded across builds.</li>
-                <li style="padding-bottom: 10px;">Showcased issues with missing or broken models and materials using screenshots.</li>
-                <li style="padding-bottom: 10px;">Utilized knowledge of the Source SDK to provide further informations such as the precise locations of issues within levels.</li>
-                <li style="padding-bottom: 10px;">Provided dumped crash logs to developers to diagnose crashes.</li>
-                <li>Made "Version Comparison" videos to demonstrate bugs and regressions.</li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lewis Cardwell - JBEP3</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="../styles/bs_portfolioadd.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Additional JS -->
+    <script src="../js/modifiedDate.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="row me-md-auto" style="background: linear-gradient(300deg, rgb(35, 0, 16), rgb(120, 0, 57), rgb(35, 0, 16)) 0% 0% / 180% 180%; animation: gradient-animation 30s ease infinite;">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 ps-3 me-md-auto text-light text-decoration-none">
+                <img src="../images/EyeOfTheBeholder.webp" alt="Logo" class="rounded-circle me-2" width="45" height="45">
+                <span class="fs-3"><strong>Lewis Cardwell - Game Designer</strong></span>
+            </a>
+            <ul class="nav nav-pills pe-3 py-1">
+                <li class="nav-item px-1"><a href="../index.html" class="nav-link text-light" aria-current="page">HOME</a></li>
+                <li class="nav-item px-1"><a href="../about.html" class="nav-link text-light">ABOUT</a></li>
             </ul>
-        </div>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">DEVELOPMENT SHOTS</h1>
-        <div class="ftRow">
-            <div class="ftColumn">
-                <img src="../images/dev/JBEP3/FloatingProp.png" title="Floating Floor Map Prop" alt="Floating Floor Map Prop" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/JBEP3/legClipping.png" title="Leg Model Clipping Issue" alt="Leg Model Clipping Issue" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/JBEP3/missingArms.png" title="Missing Viewmodel Arms" alt="Missing Viewmodel Arms" style="width: 100%;">
-            </div>
-        </div>
-        <div class="ftRow">
-            <div class="ftColumn">
-                <img src="../images/dev/JBEP3/crushedFrames.png" title="Issues with low Framerates" alt="Issues with low Framerates" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/JBEP3/viewTilt.png" title="View Tilt Issue" alt="View Tilt Issue" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/lSgdQDqA908" title="recoil moment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="ftRow">
-            <div class="ftColumn">
-                <img src="../images/dev/JBEP3/notIce.png" title="Broken Ice Material" alt="Broken Ice Material" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/JBEP3/brokenFloor.png" title="Broken Floor Material" alt="Broken Floor Material" style="width: 100%;">
-            </div>
-            <div class="ftColumn">
-                <img src="../images/dev/JBEP3/brokenSkybox.png" title="Missing Skybox Material" alt="Missing Skybox Material" style="width: 100%;">
-            </div>
-        </div>
-        <hr>
-        <h1 style="color: white; font-size: 300%; filter: drop-shadow(3px 3px 0px #000000); text-align: center;">DOWNLOAD</h1>
-        <a href="https://store.steampowered.com/app/869480/Jabroni_Brawl_Episode_3/" style="align-content: center; margin-left: 45.75%; margin-right: auto" target="_blank"><button class="downloadButton btnSteam"><img src="../images/buttonLogos/steam-white.png" style="object-fit: contain; width: 75%;"></button></a>
-        <p style="text-align: center; color: orange; font-weight: bold; filter: drop-shadow(3px 3px 0px #000000);">*Ownership of Half-Life 2 is required to play.</p>
+        </header>
     </div>
-    <div class="footer">
-        <a class="logo" style="font-size: 15px;">Site created by Lewis Cardwell - Site Last Updated: <p id="modifyDate" style="display: inline;"></p></a>
-        <div class="footer-right">
-            <a href="mailto:sylenthmail@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="font-size: 150%;"></i></a>
-            <a href="https://www.linkedin.com/in/lewis-cardwell-325300332/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 150%;"></i></a>
-            <a href="https://sylenth.itch.io/" target="_blank"><i class="fa-brands fa-itch-io" style="font-size: 150%;"></i></a>
+    <!-- Header End -->
+    <div class="row text-center py-5 me-md-auto" style="background-image: url(../images/projBGs/JBEP3.png); background-position: top; background-size: cover;">
+        <img src="../images/projLogos/JBEP3.png" class="rounded mx-lg-auto d-block img-responsive" style="max-width: 36%; height: auto;" loading="important">
+    </div>
+    <div class="container-fluid px-0 ps-3 me-md-auto" style="background-color: rgb(49, 49, 49);">
+        <div class="row text-center align-items-center px-3 py-4 me-md-auto" style="background-color: rgb(49, 49, 49);">
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">RELEASE TRAILER</h1>
+            <iframe class="mx-lg-auto d-block pb-5" style="max-width: 1280px;" width="1280" height="720" src="https://www.youtube.com/embed/jn_KnbmisQo" title="Jabroni Brawl: Episode 3 RELEASE Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-ruffle-polyfilled=""></iframe>
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <div class="row flex-lg-row-reverse align-items-center g-1 py-1 pb-4">
+                <div class="col-10 col-sm-8 col-lg-5"> 
+                    <img src="../images/backgroundImages/JBEP3.webp" class="d-block mx-lg-auto img-fluid" alt="garbage!" title="garbage!" width="256" height="256" loading="lazy" style="filter:drop-shadow(6px 6px 5px #00000080)"> 
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-light display-3 fw-bold lh-1 mb-3" style="filter:drop-shadow(3px 3px 0px #000000)">BACKGROUND</h1>
+                    <p class="text-light fs-5">"Jabroni Brawl: Episode 3" is a multiplayer shooter based on a licenced branch of the Source Engine featuring a wide assortment of maps, gamemodes, playermodels and weapons.</p>
+                    <p class="text-light fs-5">I was granted access to the game as a Closed Beta Tester in July 2020 and have remained part of the project ever since.</p>
+                    <p class="text-light fs-5">Testing is usually conducted on a bi-weekly basis using a separate "Beta Playtest" build via Steam, with feedback collated later on with screenshots and videos.</p>
+                </div>
+            </div>
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">ROLES & RESPONSIBILITIES</h1>
+            <p class="text-light fs-5">Within the team, I have the role of bug-hunting, finding and recording bugs to submit to the devs for review, patching and further testing.</p>
+            <!-- Key Software Start -->
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">KEY SOFTWARE</h1>
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-1 py-4 px-1 mx-5">
+                    <img src="../images/softwareLogos/white/sourceSDK.png" title="GitHub" alt="GitHub" style="width: 100%;">
+                    <p class="text-light fs-5 pt-1 fw-bold" style="filter:drop-shadow(2px 2px 0px #000000)">Source SDK</p>
+                </div>
+                <div class="col-sm-1 py-4 px-1 mx-5">
+                    <img src="../images/softwareLogos/white/Lightshot.png" title="Miro" alt="Miro" style="width: 100%;">
+                    <p class="text-light fs-5 pt-1 fw-bold" style="filter:drop-shadow(2px 2px 0px #000000)">Lightshot</p>
+                </div>
+                <div class="col-sm-1 py-4 px-1 mx-5">
+                    <img src="../images/softwareLogos/white/OBS.png" title="Unreal Engine" alt="Unreal Engine" style="width: 100%;">
+                    <p class="text-light fs-5 pt-1 fw-bold" style="filter:drop-shadow(2px 2px 0px #000000)">Open Broadcast Software</p>
+                </div>
+            </div>
+            <!-- Key Software End -->
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <!-- Contributions Start -->
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">CONTRIBUTIONS</h1>
+            <p class="text-light fs-4 pt-1">• Reported issues with missing sound effects using comparison videos recorded across builds.</p></li>
+            <p class="text-light fs-4 pt-1">• Showcased issues with missing or broken models and materials using screenshots.</p></li>
+            <p class="text-light fs-4 pt-1">• Provided dumped crash logs to developers to diagnose crashes.</p></li>
+            <p class="text-light fs-4 pt-1 py-4">• Made "Version Comparison" videos to demonstrate bugs and regressions.</p></li>
+            <!-- Contributions End -->
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <!-- Development Shots Start -->
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">DEVELOPMENT SHOTS</h1>
+            <div class="row justify-content-center pb-5">
+                <div id="devShotCarousel" class="carousel slide" data-bs-theme="light" style="max-width: 50%;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#devShotCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/dev/JBEP3/FloatingProp.png" class="d-block w-100" alt="JBEP3 - fart funny">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Floating Prop Hunting</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Various props within maps have a habit of floating above the floor for various reasons</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/JBEP3/legClipping.png" class="d-block w-100" alt="JBEP3 - fart funny">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Viewmodel Clipping</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">The viewmodel for the Kick clipping into the viewmodel for the Fists</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/JBEP3/missingArms.png" class="d-block w-100" alt="JBEP3 - fart funny">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A Farewell to Arms</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A victim of the few content culls done to prevent issues with Valve</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/JBEP3/notIce.png" class="d-block w-100" alt="JBEP3 - fart funny">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Busted Ice Material</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A Material that make usage of Cubemap Reflections to give it a reflective look</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/JBEP3/brokenFloor.png" class="d-block w-100" alt="JBEP3 - fart funny">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Graphical/Rendering Mishaps</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">A lot has gone wrong here, gets worse when you can't reliably re-produce it</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/dev/JBEP3/brokenSkybox.png" class="d-block w-100" alt="JBEP3 - fart funny">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">Missing Textures</h5>
+                                <p style="backdrop-filter: blur(10px); backdrop-filter: brightness(500%); backdrop-filter: contrast(10%);">The iconic error texture, its bright colours make it easy to spot and correct</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#devShotCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#devShotCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Development Shots End -->
+            <hr style="color: white; width: 95%; border-width: 2px;" class="d-flex mx-auto">
+            <h1 class="text-light display-4 fw-bold py-4" style="filter:drop-shadow(3px 3px 0px #000000)">DOWNLOAD</h1>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <a class="btn btn-primary btn-Steam" role="button" href="https://store.steampowered.com/app/869480/Jabroni_Brawl_Episode_3/"><img src="../images/buttonLogos/steam-white.png" width="225" class="py-2"></a>
+            </div>
+            <p class="fs-4 pt-1 fw-bold" style="color: orangered; filter:drop-shadow(1px 1px 0px #000000)">*Ownership of Half-Life 2 is required to play.</p>
         </div>
     </div>
-    </body>
+    <!-- Footer Start -->
+    <div class="row me-md-auto" style="background: #ff71b3;">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-4">
+           <div class="col-md-5 d-flex align-items-center">
+                <a href="#top" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1 ps-3">
+                    <span class="mb-3 mb-md-0 text-dark"><strong>This page was last edited: <span id="modifyDate"></span> - Powered by Bootstrap since May 2025!</strong></span>
+                </a>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-3">
+                <li class="ms-3"><a href="mailto:sylenthmail@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="font-size: 175%; color: black;"></i></a></li>
+                <li class="ms-3"><a href="https://www.linkedin.com/in/lewis-cardwell-325300332/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 175%; color: black;"></i></a></li>
+                <li class="ms-3"><a href="https://sylenth.itch.io/" target="_blank"><i class="fa-brands fa-itch-io" style="font-size: 175%; color: black;"></i></a></li>
+        </footer>
+    </div>
+    <!-- Footer End -->
+    <!-- Bootstrap Core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
 </html>

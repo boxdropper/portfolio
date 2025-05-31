@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url(fonts/fontawesome/css/all.css);
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.nav-link.active {
+    background-color: black !important;
+    color: white !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline !important;
+    background-color: #8b516c !important;
+    color: white !important;
+}
+
+.btn-Itch {
+    background-color: #fa5c5c;
+    border-color: #fa5c5c;
+}
+
+.btn-Itch:hover {
+    background-color: #be4141;
+    border-color: #fa5c5c;
+}
+
+.btn-GDrive {
+    background-color: cornsilk;
+    border-color: cornsilk;
+}
+
+.btn-GDrive:hover {
+    background-color: rgb(228, 215, 164);
+    border-color: cornsilk;
+}
+
+.btn-Steam {
+    background-color: #231f20;
+    border-color: #231f20;
+}
+
+.btn-Steam:hover {
+    background-color: #1a1717;
+    border-color: #231f20;
+}
+
+.btn-ModDB {
+    background-color: #AA0000;
+    border-color: #AA0000;
+}
+
+.btn-ModDB:hover {
+    background-color: #7a0000;
+    border-color: #AA0000;
+}
+
+.btn-GitHub {
+    background-color: #1f2328;
+    border-color: #1f2328;
+}
+
+.btn-GitHub:hover {
+    background-color: #181b1f;
+    border-color: #1f2328;
+}
